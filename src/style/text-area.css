@@ -1,0 +1,15 @@
+textarea{
+    resize: none;
+    outline: none;
+    color: rgb(82, 199, 188);
+    width: 100%;
+    max-width: 300px;
+    margin-top: 9px;
+    border-radius: 4px;
+    padding: 0 2px;
+}
+
+textarea:focus{
+    border: 2px solid rgb(100, 245, 231);
+    box-shadow: 0 0 10px rgb(100, 245, 231);
+}
