@@ -1,70 +1,18 @@
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Formulário em React
+Uns dos meus primeiros projetos feito em React, onde desta vez eu desenvolvi um pequeno formulário.
+<h3>Imagem do projeto:</h3>
+<img src="https://github.com/sian19/formulario/blob/master/src/img/img-projeto.png">
+<p>Nesta simples aplicação o usuário digita seu nome, email e uma pequena descrição dele mesmo. Feito isso se retorna na tela oque o usuário digitou e um botão para voltar a tela anterior.<p/>
+</br>
+<h3>Oque foi usado no desenvolvimento da aplicação:</h3>
+<ul>
+  <li>Os componentes foram renderizados em tela usando hooks(Funções).</li>
+  <li>Se criou states para receber os valores captados via input pelo usuário.</li>
+  <li>Na função enviar dentro da aplicação se criou um alert que é disparado caso o usuário deixe de digitar algum campo, pois nenhum campo pode ficar vazio.</li>
+  <li>O código foi organizado de forma que dentro do componente principal (form) existe 4 componentes que são eles Nome, Email, TextArea e Modal onde cada um possui sua utilidade específica dentro da aplicação, deixando assim o código mais organizado.</li>
+  <li>Foram passadas funções como props para serem utilizadas dentro dos componentes onde elas pegam os valores digitados pelo usuário onde o trabalho delas é serem executadas dentro dos componentes e fazer com que os valores sejam colocados dentro do seu respectivo state, por exemplo o oque foi digitado como nome deve ser colocado dentro do state nome e assim por diante.</li>
+  <li>Para fazer com que o modal apareça ao usuário digitar os valores pedidos, foi criado um state chamado show onde ao ser identificado que o usuário digitou todos os valores pedidos em tela ele muda o seu estado de false para true onde automaticamente dentro da aplicação através de um operador ternário uma classe ira ser chamada e em seguida renderizada em tela se o valor do state show for true, no caso oque vai ser renderizado será o modal.</li>
+  <li>foi criado também um objeto para cada vez que o usuário digitar os valores é passado para uma classe através de um constructor e então com um new é criado um objeto que é passado como props para o componente modal para serem renderizados esses valores em tela.</li>
+</ul>
+<h3>Link do projeto:</h3>
+<a href="">Clique aqui</a>
