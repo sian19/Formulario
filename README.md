@@ -15,4 +15,4 @@ Uns dos meus primeiros projetos feito em React, onde desta vez eu desenvolvi um 
   <li>foi criado também um objeto para cada vez que o usuário digitar os valores é passado para uma classe através de um constructor e então com um new é criado um objeto que é passado como props para o componente modal para serem renderizados esses valores em tela.</li>
 </ul>
 <h3>Link do projeto:</h3>
-<a href="https://form-react.herokuapp.com/">Clique aqui</a>
+<a href="https://form-data2022.netlify.app/">Clique aqui</a>
